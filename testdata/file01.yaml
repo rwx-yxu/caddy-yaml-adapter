@@ -1,0 +1,11 @@
+---
+apps:
+  http:
+    servers:
+      hello:
+        listen:
+        - localhost:2020
+        routes:
+        - handle:
+          - body: Hello, world!
+            handler: static_response
